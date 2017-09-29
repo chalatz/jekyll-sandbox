@@ -1,3 +1,5 @@
 ---
+pages:
+- _posts/another-post.md
 hide_body: false
 fields: []
