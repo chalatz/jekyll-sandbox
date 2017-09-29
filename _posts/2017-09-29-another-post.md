@@ -8,3 +8,5 @@ Yes.
 
 Another test post.
 
+![](/uploads/2017/09/29/nature-q-c-640-480-2.jpg)
+
