@@ -1,0 +1,11 @@
+---
+pages:
+- test-page.md
+hide_body: false
+fields:
+- type: text
+  name: text_1
+  label: text 1
+- type: field_group
+  name: group
+  label: Group
