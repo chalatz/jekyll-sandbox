@@ -18,14 +18,16 @@ fields:
   - type: text
     name: text_3
     label: Text 3
-- type: select
-  name: choose
+- type: list
+  name: choose_from_object
+  label: Choose from object
+  description: Choose from object from inside this page
   config:
+    use_select: true
     source:
       type: documents
       section: jekyll-pages
       file: test-page.md
       path: object
-  label: Choose
 pages:
 - test-page.md
