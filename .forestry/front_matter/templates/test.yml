@@ -1,11 +1,33 @@
 ---
-pages:
-- test-page.md
+label: test
 hide_body: false
 fields:
-- type: text
-  name: text_1
-  label: text 1
 - type: field_group
   name: group
   label: Group
+- type: field_group
+  name: object
+  label: Object
+  fields:
+  - type: text
+    name: text_1
+    label: Text 1
+  - type: text
+    name: text_2
+    label: Text 2
+  - type: text
+    name: text_3
+    label: Text 3
+- type: list
+  name: choose_from_object
+  label: Choose from object
+  description: Choose from object from inside this page
+  config:
+    use_select: true
+    source:
+      type: documents
+      section: jekyll-pages
+      file: test-page.md
+      path: object
+pages:
+- test-page.md
