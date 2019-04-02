@@ -16,3 +16,9 @@ choose_from_object:
 {% for post in site.posts limit: 1 %}
 {{ post.content | split: '<p>' }}
 {% endfor %}
+
+<ul>
+  {%- for option in page.choose_from_object -%}
+    <li>{{- page.object[option] -}}</li>    
+  {%- endfor -%}
+</ul>
