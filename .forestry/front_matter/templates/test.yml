@@ -18,5 +18,14 @@ fields:
   - type: text
     name: text_3
     label: Text 3
+- type: select
+  name: choose
+  config:
+    source:
+      type: documents
+      section: jekyll-pages
+      file: test-page.md
+      path: object
+  label: Choose
 pages:
 - test-page.md
