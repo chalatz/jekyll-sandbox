@@ -1,6 +1,5 @@
 ---
-pages:
-- test-page.md
+label: test
 hide_body: false
 fields:
 - type: text
@@ -9,3 +8,18 @@ fields:
 - type: field_group
   name: group
   label: Group
+- type: field_group
+  name: object
+  label: Object
+  fields:
+  - type: text
+    name: text_1
+    label: Text 1
+  - type: text
+    name: text_2
+    label: Text 2
+  - type: text
+    name: text_3
+    label: Text 3
+pages:
+- test-page.md

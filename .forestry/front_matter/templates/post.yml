@@ -1,5 +1,6 @@
 ---
-pages:
-- _posts/2017-09-29-another-post.md
+label: post
 hide_body: false
 fields: []
+pages:
+- _posts/2017-09-29-another-post.md
