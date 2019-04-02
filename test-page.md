@@ -6,5 +6,8 @@ object:
   text_1: Κείμενο 1
   text_2: Κείμενο 2
   text_3: Κείμενο 3
+choose_from_object:
+- text_1
+- text_3
 
 ---
