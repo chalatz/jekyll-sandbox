@@ -22,3 +22,9 @@ choose_from_object:
     <li>{{- page.object[option] -}}</li>    
   {%- endfor -%}
 </ul>
+
+<ul>
+  {%- for item in page.object -%}
+    <li>key: {{ item[0] }}, value: {{ item[1] }}</li>    
+  {%- endfor -%}
+</ul>
