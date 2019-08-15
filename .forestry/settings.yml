@@ -4,19 +4,19 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: my_collections/_account_settings
-  label: Getting Started
-  create: all
-  match: "**/*"
-- type: heading
-  label: Help
 - type: jekyll-posts
   label: Posts
   create: all
 - type: jekyll-pages
   label: Pages
   create: all
+- type: heading
+  label: Help
+- type: directory
+  path: my_collections/_account_settings
+  label: Getting Started
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
