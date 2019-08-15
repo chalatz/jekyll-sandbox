@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.getting_started.size > 0 -%}
+    <h2 class="post-list-heading">Getting Started</h2>
+    <ul class="post-list">
+      {%- for item in site.getting_started -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ item.url | relative_url }}">
+            {{ item.title | escape }}
+          </a>
+        </h3>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  {%- if site.account_settings.size > 0 -%}
+  <hr>
+    <h2 class="post-list-heading">Account Settings</h2>
+    <ul class="post-list">
+      {%- for item in site.account_settings -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ item.url | relative_url }}">
+            {{ item.title | escape }}
+          </a>
+        </h3>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>
