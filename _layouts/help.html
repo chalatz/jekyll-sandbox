@@ -13,4 +13,10 @@ layout: default
 
   {%- include listing.html the_collection = site.account_settings title = 'Account Settings' -%}
 
+  {%- assign arr1 = site.getting_started | where: 'featured', true -%}
+  {%- assign arr2 = site.account_settings | where: 'featured', true -%}
+
+  {% assign arr = arr1 | concat: arr2 %}
+
+  {%- include listing.html the_collection = arr title = 'Featured' -%}
 </div>
