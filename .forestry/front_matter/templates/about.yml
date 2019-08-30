@@ -35,3 +35,5 @@ fields:
       file: _data/cats_object.yml
       path: 
   label: Cats from object
+pages:
+- about.md
