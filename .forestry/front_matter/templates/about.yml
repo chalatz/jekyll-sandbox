@@ -11,3 +11,27 @@ fields:
 - type: text
   name: permalink
   label: permalink
+- name: cats_from_array
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: _data/cats_array.yml
+      path: Cats array
+  label: Cats from array
+- name: cats_from_object
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: data
+      file: _data/cats_object.yml
+      path: 
+  label: Cats from object
