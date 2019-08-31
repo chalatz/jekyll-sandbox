@@ -1,0 +1,18 @@
+<hr>
+{%- if include.title -%}
+    {%- assign title = include.title -%}
+{%- else -%}
+    {%- assign title = 'CTA title' -%}
+{%- endif -%}
+
+{%- if include.body -%}
+    {%- assign body = include.body -%}
+{%- else -%}
+    {%- assign body = 'CTA body' -%}
+{%- endif -%}
+
+<h3>{{ page.cta_title }}</h3>
+<p>
+    {{ body }}
+</p>
+<hr>
