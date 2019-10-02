@@ -1,0 +1,14 @@
+en:
+  name: English
+  blog: true
+  redirect: false
+
+es:
+  name: español
+  blog: false
+  redirect: false
+
+fr:
+  name: français
+  blog: true
+  redirect: false

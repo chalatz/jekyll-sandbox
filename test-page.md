@@ -10,8 +10,10 @@ object:
 choose_from_object:
 - text_1
 - text_3
-
+string: 'Hello sadasd'
 ---
+
+string: {{ page.string }}, length: {{ page.string.size }}!
 
 {% for post in site.posts limit: 1 %}
 {{ post.content | split: '<p>' }}

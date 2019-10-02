@@ -3,11 +3,31 @@ layout: default
 ---
 
 <div class="home">
+
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
+
+  {%- assign var = 4 -%}
+
+  <p>
+    {%- assign result = var | times: 1 -%}
+    {{ result }}
+    {%- if result == 0 -%}
+      NaN
+    {%- else -%}
+      number
+    {%- endif -%}
+  </p>
+
+  {%- for item in site.data.langs -%}
+    {%- assign lang = item[0] -%}
+    {%- if item[1].blog == true -%}
+      {{ item[0] }}
+    {%- endif -%}
+  {%- endfor -%}
 
   {%- include listing.html the_collection = site.getting_started title = 'Getting Started' -%}
 
