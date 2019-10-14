@@ -11,7 +11,18 @@ choose_from_object:
 - text_1
 - text_3
 string: 'Hello sadasd'
+env: devdfdf
+jekyll_env: developmentdfsdf
 ---
+
+<p>page.jekyll_env: {{ page.jekyll_env }}</p>
+<p>page.env: {{ page.env }}</p>
+
+{%- if page.jekyll_env != "development" and page.env != 'dev' -%}
+  <p>prod!</p>
+{%- else -%}
+  <p>dev!</p>
+{%- endif -%}
 
 string: {{ page.string }}, length: {{ page.string.size }}!
 
