@@ -13,7 +13,21 @@ choose_from_object:
 string: 'Hello sadasd'
 env: devdfdf
 jekyll_env: developmentdfsdf
+strings:
+  
+  
 ---
+
+<p>
+  page.string size: {{ page.strings.string.size }}<br>
+  {%- if page.strings.string.size > 0 -%}
+    not empty
+  {%- endif -%}
+</p>
+
+<p>
+  {{ page.strings.string | default: 'default_string' }}
+</p>
 
 <p>page.jekyll_env: {{ page.jekyll_env }}</p>
 <p>page.env: {{ page.env }}</p>
