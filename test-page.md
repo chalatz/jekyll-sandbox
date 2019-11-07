@@ -17,6 +17,8 @@ strings:
   
   
 ---
+{%- include random_string.html -%}
+<p>Random string: {{ random_string }}</p>
 
 <p>
   page.string size: {{ page.strings.string.size }}<br>

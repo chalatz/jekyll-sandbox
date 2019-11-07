@@ -1,0 +1,9 @@
+{%- assign letters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z' -%}
+
+{%- assign letters_array = letters | split: ',' -%}
+
+{%- capture random_string -%}
+    {%- for letter in (1..5) -%}
+        {{ letters_array | sample }}
+    {%- endfor -%}
+{%- endcapture -%}
