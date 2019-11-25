@@ -5,9 +5,9 @@ permalink: "/about/"
 cats_from_array: Cat 2
 cats_from_object: cat_3
 cta_title: Front matter title!
-options: Option 1
+options: Option 2
 options_1: '1_1'
-options_2: ''
+options_2: '2_1'
 
 ---
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
