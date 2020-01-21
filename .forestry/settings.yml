@@ -22,11 +22,6 @@ sections:
   match: "**/*"
   templates:
   - post
-- type: directory
-  path: _drafts
-  label: drafts
-  create: none
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
