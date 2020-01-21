@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Hello
 permalink: "/hello/"
 cats_from_array: Cat 2
 cats_from_object: cat_3
