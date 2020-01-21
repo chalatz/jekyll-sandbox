@@ -20,6 +20,11 @@ sections:
   match: "**/*"
   templates:
   - post
+- type: directory
+  path: _drafts
+  label: drafts
+  create: all
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
