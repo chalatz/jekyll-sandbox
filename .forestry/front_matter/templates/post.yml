@@ -16,8 +16,5 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: published
-  type: boolean
-  label: published
 pages:
 - _posts/2017-09-29-another-post.md
