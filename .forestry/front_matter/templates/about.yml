@@ -84,3 +84,4 @@ fields:
     value: Option 2
 pages:
 - about.md
+- hello.md
