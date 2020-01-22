@@ -6,6 +6,5 @@ options_1: []
 options_2: []
 layout: page
 title: just learn
-published: false
 
 ---
