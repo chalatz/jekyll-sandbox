@@ -7,6 +7,5 @@ options_2: []
 layout: page
 title: Yo
 permalink: yo
-published: false
 
 ---
