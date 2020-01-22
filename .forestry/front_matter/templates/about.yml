@@ -85,4 +85,5 @@ fields:
 pages:
 - about.md
 - hello.md
+- learn/just-learn.md
 - yo.md
