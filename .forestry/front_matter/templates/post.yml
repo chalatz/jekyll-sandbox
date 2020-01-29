@@ -1,6 +1,22 @@
 ---
 label: post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 pages:
 - _posts/2017-09-29-another-post.md
+- _posts/en/2020-01-01-yo.md
+- _posts/ttt.md

@@ -13,6 +13,15 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - post
+- type: directory
+  path: _posts
+  label: Posts folder
+  create: all
+  match: "**/*"
+  templates:
+  - post
 - type: jekyll-pages
   label: Pages
   create: all

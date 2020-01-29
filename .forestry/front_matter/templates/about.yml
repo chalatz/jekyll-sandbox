@@ -35,5 +35,55 @@ fields:
       file: _data/cats_object.yml
       path: 
   label: Cats from object
+- name: options
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Option 1
+    - Option 2
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Options
+- name: options_1
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - '1_1'
+    - '1_2'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Options 1
+  showOnly:
+    field: options
+    value: Option 1
+- name: options_2
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - '2_1'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Options 2
+  showOnly:
+    field: options
+    value: Option 2
 pages:
 - about.md
+- hello.md
+- learn/just-learn.md
+- yo.md
