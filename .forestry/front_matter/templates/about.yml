@@ -82,6 +82,28 @@ fields:
   showOnly:
     field: options
     value: Option 2
+- name: group
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: text
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: group
 pages:
 - about.md
 - hello.md
