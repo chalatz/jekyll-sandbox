@@ -2,11 +2,11 @@
 label: post
 hide_body: false
 fields:
-- name: title
+- name: post_title
   type: text
   config:
     required: false
-  label: title
+  label: post title
 - name: date
   type: datetime
   label: date
@@ -18,5 +18,6 @@ fields:
     display_utc: false
 pages:
 - _posts/2017-09-29-another-post.md
+- _posts/2020-02-27-test post title.md
 - _posts/en/2020-01-01-yo.md
 - _posts/ttt.md
