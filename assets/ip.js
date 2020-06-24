@@ -18,6 +18,7 @@ $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function(ip_data){
             </iframe>
         `;
 
+    console.log(ip_address);
     console.log(city);
 
     });
