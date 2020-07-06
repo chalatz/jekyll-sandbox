@@ -22,4 +22,5 @@ $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function(ip_data){
     
     // });
     console.log(ip_address);
+    console.log('{{ page.layout }}');
 });
