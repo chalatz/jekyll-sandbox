@@ -19,7 +19,7 @@
     <script>
         $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function(ip_data){
             var ip_address = ip_data.ip,
-              api_url = 'https://api.ipstack.com/' + ip_address + '?access_key=f58c0492d398ca0483860efd3be94e21&callback=?';
+                api_url = 'https://geo.ipify.org/api/v1?apiKey=at_oTUeIK55gv84LkPmUkXVXtq9KlW4n&ipAddress=' + ip_address;
             $.getJSON(api_url, function(data){
             
             // var city = data.city,
@@ -38,13 +38,10 @@
             //         </iframe>
             //     `;
 
-            // console.log(city);
-
-            console.log(data.city);
+            console.log(data.location.city);
             
             });
             console.log(ip_address);
-            
         });
     </script>
 
