@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="{{ '/assets/jquery.js' | relative_url }}"></script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function(ip_data){
+            var ip_address = ip_data.ip,
+                api_url = 'https://geo.ipify.org/api/v1?apiKey=at_oTUeIK55gv84LkPmUkXVXtq9KlW4n&ipAddress=' + ip_address;
+            $.getJSON(api_url, function(data){
+            
+            // var city = data.city,
+            //     region = data.regionName,
+            //     country = data.country,
+            //     isp = data.isp,
+            //     location =  city + ', ' + region + ', ' + country,
+            //     loc_gmap = encodeURIComponent(location),
+            //     loc_iframe = `
+            //         <iframe
+            //             width="400"
+            //             height="400"
+            //             frameborder="0" style="border:0"
+            //             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGXwwRdW5nMP90h3w9rd5gApXb8jkcPJg
+            //                 &q=${loc_gmap}&zoom=12">
+            //         </iframe>
+            //     `;
+
+            console.log(data.location.city);
+            
+            });
+            console.log(ip_address);
+        });
+    </script>
+
+  </body>
+
+</html>
