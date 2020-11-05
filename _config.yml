@@ -26,7 +26,7 @@ github_username:  jekyll
 
 permalink: pretty
 
-collections_dir: my_collections
+# collections_dir: my_collections
 
 collections:
   getting_started:

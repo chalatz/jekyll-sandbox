@@ -11,10 +11,8 @@ layout: default
 
   {%- assign posts_size = site.posts | size -%}
 
-  {{ posts_size }}
 
-  
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">{{ posts_size }} {{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
@@ -33,6 +31,6 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  
+
 
 </div>
