@@ -36,11 +36,20 @@ collections:
     output: true
     permalink: /help/account-settings/:name/
 
+# page_gen-dirs: true # uncomment, if you prefer to generate named folders
+
+# page_gen:
+#   - data: 'members'
+#     template: 'profile'
+#     name: 'full_name'
+#     dir: 'people'
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-datapage-generator
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
