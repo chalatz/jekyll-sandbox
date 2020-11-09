@@ -16,8 +16,27 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+- name: picked
+  type: field_group
+  config: {}
+  fields:
+  - name: is_picked
+    type: boolean
+    label: is picked
+  - name: updated
+    type: datetime
+    label: updated
+    description: ''
+    config:
+      required: false
+      date_format: 
+      time_format: 
+      display_utc: false
+    default: now
+    showOnly:
+      field: is_picked
+      value: true
+  label: picked
 pages:
 - _posts/2017-09-29-another-post.md
-- _posts/2020-02-27-test post title.md
-- _posts/en/2020-01-01-yo.md
 - _posts/ttt.md
