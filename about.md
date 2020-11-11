@@ -13,6 +13,7 @@ group:
   text: two
 - title: One
   text: One one two
+posts: my_collections/_account_settings/en/account-settings-1.md
 
 ---
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
