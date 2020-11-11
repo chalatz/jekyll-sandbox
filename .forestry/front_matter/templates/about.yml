@@ -112,7 +112,7 @@ fields:
     options: []
     source:
       type: pages
-      section: data
+      section: getting-started
       file: 
       path: 
   label: Posts
