@@ -104,6 +104,18 @@ fields:
     max: 
     labelField: 
   label: group
+- name: posts
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: posts-folder
+      file: 
+      path: 
+  label: Posts
 pages:
 - about.md
 - hello.md
