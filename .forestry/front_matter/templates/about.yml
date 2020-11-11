@@ -112,7 +112,7 @@ fields:
     options: []
     source:
       type: pages
-      section: posts-folder
+      section: data
       file: 
       path: 
   label: Posts
