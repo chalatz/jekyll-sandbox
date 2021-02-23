@@ -36,6 +36,14 @@ collections:
     output: true
     permalink: /help/account-settings/:name/
 
+defaults:
+-
+  scope:
+    path: "_posts"
+    type: "posts"
+  values:
+    permalink: /blog/:title/
+
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
 
 # page_gen:
