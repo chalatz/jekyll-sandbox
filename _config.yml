@@ -42,6 +42,7 @@ defaults:
     path: "_posts"
     type: "posts"
   values:
+    layout: "post"
     permalink: /blog/:title/
 
 # page_gen-dirs: true # uncomment, if you prefer to generate named folders
