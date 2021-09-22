@@ -23,10 +23,6 @@ fields:
     - en
     - de
     - ja
-    options:
-    - en
-    - de
-    - ja
   label: Langs
 - name: cats_from_array
   type: select
