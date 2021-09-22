@@ -116,6 +116,40 @@ fields:
       file: 
       path: 
   label: Posts
+- name: langs
+  type: field_group_list
+  fields:
+  - name: en
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - en
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: en
+  - name: de
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - de
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: de
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Langs
 pages:
 - about.md
 - hello.md
