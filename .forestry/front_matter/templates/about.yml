@@ -11,19 +11,6 @@ fields:
 - type: text
   name: permalink
   label: permalink
-- name: langs
-  type: list
-  config:
-    use_select: true
-    min:
-    max:
-    source:
-      type: simple
-    default:
-    - en
-    - de
-    - ja
-  label: Langs
 - name: cats_from_array
   type: select
   default: []
@@ -46,7 +33,7 @@ fields:
       type: documents
       section: data
       file: _data/cats_object.yml
-      path:
+      path: 
   label: Cats from object
 - name: options
   type: select
@@ -58,9 +45,9 @@ fields:
     - Option 2
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: Options
 - name: options_1
   type: select
@@ -72,9 +59,9 @@ fields:
     - '1_2'
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: Options 1
   showOnly:
     field: options
@@ -88,9 +75,9 @@ fields:
     - '2_1'
     source:
       type: simple
-      section:
-      file:
-      path:
+      section: 
+      file: 
+      path: 
   label: Options 2
   showOnly:
     field: options
@@ -113,9 +100,9 @@ fields:
         format: markdown
     label: text
   config:
-    min:
-    max:
-    labelField:
+    min: 
+    max: 
+    labelField: 
   label: group
 - name: posts
   type: select
@@ -126,8 +113,8 @@ fields:
     source:
       type: pages
       section: getting-started
-      file:
-      path:
+      file: 
+      path: 
   label: Posts
 pages:
 - about.md
